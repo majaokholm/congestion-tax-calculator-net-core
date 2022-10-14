@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>congestion-tax-calculator-net-core</name>
+    </assembly>
+    <members>
+        <member name="M:congestion_tax_calculator_net_core.Controllers.CongestionTaxCalculatorController.GetCongestionTax(congestion_tax_calculator_net_core.BO.RequestBody)">
+            <summary>
+            Given an array of date timestamps that the vehicle has pass tolling stations, calculates the congestiontax owed.
+            </summary>
+            <remarks>
+            This endpoint requires the timestampes to be in the following format yyyy-mm-dd hh:mm:ss
+            </remarks>
+            <param name="requestbody"> JSON body with the vehiele type and an array of timestamps</param>
+            <returns>The tax value as an int</returns>
+            <response code="200">Returns the requested tax value</response>
+            <response code="400">Returned if any of the input parameters are invalid</response>
+        </member>
+        <member name="M:CongestionTaxCalculator.GetTax(congestion_tax_calculator_net_core.BO.Vehicles,System.DateTime[])">
+             Calculate the total toll fee 
+            
+             @param vehicle - the vehicle
+             @param dates   - date and time of all passes 
+             @return - the total congestion tax
+        </member>
+        <member name="M:CongestionTaxCalculator.CalculateDailyTax(System.Collections.Generic.List{System.DateTime})">
+             Calculate the total toll fee for one day
+            
+             @param timeStamps   - date and time of all passes on one day
+             @return - the total congestion tax for that day
+        </member>
+        <member name="M:CongestionTaxCalculator.IsTollFreeVehicle(congestion_tax_calculator_net_core.BO.Vehicles)">
+             Determines if toll free vehichle 
+            
+             @param vechicle   - enum defined in Business Object 'RequestBody
+             @return - bool
+        </member>
+        <member name="M:CongestionTaxCalculator.GetTollFee(System.DateTime)">
+             Gets toll rate for based on time
+            
+             @param date   - the time the vehicles passed
+             @return - tax fee as int
+        </member>
+        <member name="M:CongestionTaxCalculator.IsTollFreeDate(System.DateTime)">
+             Determines if toll free date 
+            
+             @param date   - the time the vehicles passed
+             @return - bool
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:CongestionTaxCalculator.RefactorTo60MinIntervals(System.DateTime[])" -->
+    </members>
+</doc>

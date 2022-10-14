@@ -1,0 +1,54 @@
+﻿{
+  "taxrate":[
+    {
+      "starttime": "06.00",
+      "endtime": "06.29",
+      "rate": 8
+    },
+    {
+      "starttime": "06.30",
+      "endtime": "06.59",
+      "rate": 13
+    },
+    {
+      "starttime": "07.00",
+      "endtime": "07.59",
+      "rate": 18
+    },
+    {
+      "starttime": "08.00",
+      "endtime": "08.29",
+      "rate": 13
+    },
+    {
+      "starttime": "08.30",
+      "endtime": "14.59",
+      "rate": 8
+    },
+    {
+      "starttime": "15.00",
+      "endtime": "15.29",
+      "rate": 13
+    },
+    {
+      "starttime": "15.30",
+      "endtime": "16.59",
+      "rate": 18
+    },
+    {
+      "starttime": "17.00",
+      "endtime": "17.59",
+      "rate": 13
+    },
+    {
+      "starttime": "18.00",
+      "endtime": "18.29",
+      "rate": 8
+    },
+    {
+      "starttime": "18.30",
+      "endtime": "05.59",
+      "rate": 0
+    }
+  ]
+}
